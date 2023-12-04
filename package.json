@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --transpile-only src/server.ts"
+    "devv": "ts-node-dev --transpile-only src/server.ts",
+    "dev": "tsx src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +24,7 @@
     "@types/multer": "^1.4.11",
     "@types/swagger-ui-express": "^4.1.6",
     "ts-node-dev": "^2.0.0",
+    "tsx": "^4.6.2",
     "typescript": "^5.2.2"
   },
   "dependencies": {
