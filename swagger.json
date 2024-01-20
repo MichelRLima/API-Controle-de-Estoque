@@ -347,7 +347,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/ResponseSaleProduct"
+                                    "$ref": "#/components/schemas/ResponseGetProduct"
                                 }
                             }
                         }
@@ -546,6 +546,23 @@
                     },
                     "amount": {
                         "type": "number"
+                    }
+                }
+            },
+            "ResponseGetProduct": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "amount": {
+                        "type": "number"
+                    },
+                    "price": {
+                        "type": "string"
                     }
                 }
             },
